@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile - HTML + CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            width: 350px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .card img {
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .skills {
+            text-align: left;
+            margin-top: 10px;
+        }
+        .skills li {
+            background: #f0f0f0;
+            margin: 5px 0;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        a {
+            text-decoration: none;
+            background: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        a:hover {
+            background: #45a049;
+        }
+        .card img {
+    width: 150px;  
+    height: 150px;  
+    object-fit: cover;  
+    border-radius: 50%;
+    margin: 0 auto; 
+    display: block; 
+}
+
+    </style>
+</head>
+<body>
+    <div class="card">
+      <img src="profile picture.jpg" alt="My Profile Picture" width="200">
+        <h2>Deepesh Subedi</h2>
+        <p><strong>Aspiring Full Stack Developer</strong></p>
+        
+        <h3>About Me</h3>
+        <p>I am a passionate student learning full stack development. I enjoy working with both front-end and back-end technologies.</p>
+        
+        <h3>Skills</h3>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+        </ul>
+        
+        <a href="mailto:kit25b.dps@ismt.edu.np">Contact Me</a>
+    </div>
+</body>
+</html>

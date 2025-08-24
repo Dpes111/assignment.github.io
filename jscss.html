@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile - JavaScript</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+        }
+        .card {
+            border-radius: 15px;
+        }
+        .card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="card text-center shadow-lg" style="width: 22rem;">
+        <img src="profile picture.jpg" class="card-img-top p-3" alt="Profile Picture">
+        <div class="card-body">
+            <h2 class="card-title">Deepesh Subedi</h2>
+            <h6 class="card-subtitle mb-2 text-muted">Aspiring Full Stack Developer</h6>
+            <h3>About Me</h3>
+            <p class="card-text">I am a passionate student learning full stack development. I enjoy working with both front-end and back-end technologies.</p>
+            
+            <h5>Skills</h5>
+            <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item">HTML</li>
+                <li class="list-group-item">CSS</li>
+                <li class="list-group-item">Bootstrap</li>
+                <li class="list-group-item">JavaScript</li>
+                <li class="list-group-item">Python</li>
+            </ul>
+            
+            <a href="mailto:kit25b.dps@ismt.edu.np" class="btn btn-primary mb-3">Contact Me</a>
+
+            <!-- JavaScript Buttons -->
+            <h5 class="mt-3">JavaScript Demo</h5>
+            <button class="btn btn-warning m-2" onclick="showAlert()">Show Alert</button>
+            <button class="btn btn-success m-2" onclick="increaseCount()">Press Me</button>
+            <p>You pressed <span id="count">0</span> times.</p>
+        </div>
+    </div>
+
+    <script>
+        // Alert button
+        function showAlert() {
+            alert("Hello from Deepesh 🚀! This is just a JavaScript alert.");
+        }
+
+        // Counter button
+        let count = 0;
+        function increaseCount() {
+            count++;
+            document.getElementById("count").innerText = count;
+        }
+    </script>
+</body>
+</html>
